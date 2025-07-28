@@ -224,7 +224,7 @@ impl Client {
                 .assets(assets)
                 .details(&details)
                 .state(&state)
-                .status_display_type(1); // NEUE ZEILE
+                .status_display_type(2); // NEUE ZEILE
 
             self.discord_ipc_client.set_activity(activity)?;
 
