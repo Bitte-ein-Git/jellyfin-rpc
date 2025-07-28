@@ -223,7 +223,8 @@ impl Client {
                 .timestamps(timestamps)
                 .assets(assets)
                 .details(&details)
-                .state(&state);
+                .state(&state)
+                .status_display_type(1); // NEUE ZEILE
 
             self.discord_ipc_client.set_activity(activity)?;
 
